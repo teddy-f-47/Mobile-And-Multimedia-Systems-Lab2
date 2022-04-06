@@ -7,7 +7,7 @@ The application is developed with ***Flutter***.
 ## Screenshots
 ![Alt text](/dev_screenshots/tm1.PNG?raw=true "Homepage")
 ![Alt text](/dev_screenshots/tm2.PNG?raw=true "Creating a New Task")
-![Alt text](/dev_screenshots/tm3.PNG?raw=true "Viewing a New Task")
+![Alt text](/dev_screenshots/tm3.PNG?raw=true "Viewing a Particular Task")
 
 ## The built Android app
 
