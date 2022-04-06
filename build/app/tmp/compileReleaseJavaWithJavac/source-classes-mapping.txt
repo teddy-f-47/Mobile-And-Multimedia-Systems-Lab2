@@ -1,0 +1,6 @@
+io/flutter/plugins/GeneratedPluginRegistrant.java
+ io.flutter.plugins.GeneratedPluginRegistrant
+pl/edu/pwr/lab2/i268893/task_manager/BuildConfig.java
+ pl.edu.pwr.lab2.i268893.task_manager.BuildConfig
+pl/edu/pwr/lab2/i268893/task_manager/MainActivity.java
+ pl.edu.pwr.lab2.i268893.task_manager.MainActivity

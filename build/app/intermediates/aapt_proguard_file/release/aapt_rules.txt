@@ -1,0 +1,3 @@
+-keep class android.app.Application { <init>(); }
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+-keep class pl.edu.pwr.lab2.i268893.task_manager.MainActivity { <init>(); }
