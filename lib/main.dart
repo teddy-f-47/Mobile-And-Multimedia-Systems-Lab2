@@ -106,39 +106,24 @@ class _MyTaskManagerAppState extends State<MyTaskManagerAppHome> {
                 String currentTaskDueDateString =
                     DateFormat(_taskDueDateFormat).format(currentTaskDueDate);
                 String currentTaskTypeString = Constants.taskTypeValue0;
-                Icon currentTaskTypeIcon = Icon(
-                  Icons.pending,
-                  size: Styling.iconSizeSmall,
-                );
+                Icon currentTaskTypeIcon = Styling.iconTaskType0;
                 String currentTaskStatusString = Constants.taskStatus0;
                 switch (currentTaskType) {
                   case 1:
                     currentTaskTypeString = Constants.taskTypeValue1;
-                    currentTaskTypeIcon = Icon(
-                      Icons.event,
-                      size: Styling.iconSizeSmall,
-                    );
+                    currentTaskTypeIcon = Styling.iconTaskType1;
                     break;
                   case 2:
                     currentTaskTypeString = Constants.taskTypeValue2;
-                    currentTaskTypeIcon = Icon(
-                      Icons.email,
-                      size: Styling.iconSizeSmall,
-                    );
+                    currentTaskTypeIcon = Styling.iconTaskType2;
                     break;
                   case 3:
                     currentTaskTypeString = Constants.taskTypeValue3;
-                    currentTaskTypeIcon = Icon(
-                      Icons.call,
-                      size: Styling.iconSizeSmall,
-                    );
+                    currentTaskTypeIcon = Styling.iconTaskType3;
                     break;
                   case 4:
                     currentTaskTypeString = Constants.taskTypeValue4;
-                    currentTaskTypeIcon = Icon(
-                      Icons.groups,
-                      size: Styling.iconSizeSmall,
-                    );
+                    currentTaskTypeIcon = Styling.iconTaskType4;
                     break;
                 }
                 if (currentTaskStatus) {
@@ -156,12 +141,6 @@ class _MyTaskManagerAppState extends State<MyTaskManagerAppHome> {
                   },
                   child: Dismissible(
                     key: Key(index.toString() + currentTaskTitle),
-                    /*
-                    constraints: BoxConstraints(
-                      minHeight: Styling.verticalGapLarge,
-                      minWidth: MediaQuery.of(context).size.width,
-                    ),
-					*/
                     background: Container(color: Colors.red), //right, delete
                     secondaryBackground:
                         Container(color: Colors.green), //left, mark as done
@@ -206,32 +185,43 @@ class _MyTaskManagerAppState extends State<MyTaskManagerAppHome> {
                         _updateTaskList();
                       }
                     },
-                    child: Column(
-                      children: <Widget>[
-                        Row(
-                          children: <Widget>[
-                            Text(currentTaskTitle,
-                                style: TextStyle(fontWeight: FontWeight.bold)),
-                            currentTaskTypeIcon,
-                          ],
-                        ),
-                        Row(
-                          children: <Widget>[
-                            Text(
-                              Constants.taskDueDateInputLabel,
-                            ),
-                            Text(
-                              currentTaskDueDateString,
-                            ),
-                            Text(
-                              Constants.taskStatusLabel,
-                            ),
-                            Text(
-                              currentTaskStatusString,
-                            ),
-                          ],
-                        ),
-                      ],
+                    child: Container(
+                      constraints: BoxConstraints(
+                        minHeight: Styling.verticalGapLarge,
+                        minWidth: MediaQuery.of(context).size.width,
+                      ),
+                      child: Column(
+                        children: <Widget>[
+                          Row(
+                            children: <Widget>[
+                              Padding(
+                                padding:
+                                    EdgeInsets.all(Styling.verticalGapSmall),
+                                child: currentTaskTypeIcon,
+                              ),
+                              Text(currentTaskTitle,
+                                  style:
+                                      TextStyle(fontWeight: FontWeight.bold)),
+                            ],
+                          ),
+                          Row(
+                            children: <Widget>[
+                              Text(
+                                Constants.taskDueDateInputLabel,
+                              ),
+                              Text(
+                                currentTaskDueDateString,
+                              ),
+                              Text(
+                                Constants.taskStatusLabel,
+                              ),
+                              Text(
+                                currentTaskStatusString,
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 );

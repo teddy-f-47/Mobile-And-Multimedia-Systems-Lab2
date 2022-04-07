@@ -1,4 +1,4 @@
-#Wed Apr 06 19:59:48 CEST 2022
+#Thu Apr 07 11:30:01 CEST 2022
 base.0=D\:\\Apps\\task_manager\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

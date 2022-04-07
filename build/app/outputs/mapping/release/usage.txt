@@ -3804,9 +3804,9 @@ kotlin.sequences.GeneratorSequence
 kotlin.sequences.SequencesKt__SequenceBuilderKt$sequence$$inlined$Sequence$1
 androidx.customview.widget.ExploreByTouchHelper
 androidx.annotation.CheckResult
-io.flutter.embedding.engine.systemchannels.PlatformViewsChannel:
-    private static final java.lang.String TAG
 io.flutter.embedding.engine.systemchannels.PlatformChannel:
+    private static final java.lang.String TAG
+io.flutter.embedding.engine.systemchannels.PlatformViewsChannel:
     private static final java.lang.String TAG
 kotlinx.coroutines.flow.FlowKt__ReduceKt$single$$inlined$collect$1
 kotlin.Suppress
@@ -8522,5 +8522,5 @@ androidx.core.content.res.ResourcesCompat:
     private static final java.lang.ThreadLocal sTempTypedValue
     private static final java.util.WeakHashMap sColorStateCaches
     private static final java.lang.Object sColorStateCacheLock
-io.flutter.plugin.common.BinaryMessenger$-CC
 io.flutter.plugin.platform.PlatformView$-CC
+io.flutter.plugin.common.BinaryMessenger$-CC
