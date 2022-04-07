@@ -8,6 +8,8 @@ The application is developed with ***Flutter***.
 ![Alt text](/dev_screenshots/tm1.PNG?raw=true "Homepage")
 ![Alt text](/dev_screenshots/tm2.PNG?raw=true "Creating a New Task")
 ![Alt text](/dev_screenshots/tm3.PNG?raw=true "Viewing a Particular Task")
+![Alt text](/dev_screenshots/tm4_swipeleft.png?raw=true "Swiping Left to Mark Task as Done")
+![Alt text](/dev_screenshots/tm4_swiperight.png?raw=true "Swiping Right to Delete Task")
 
 ## The built Android app
 
