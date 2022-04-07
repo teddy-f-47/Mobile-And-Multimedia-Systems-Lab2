@@ -125,7 +125,7 @@ class TaskListVM {
 
   void markTaskDone(int rawIndex) {
     int taskIndex = rawIndex + 1;
-    if (taskIndex < countAllTask()) {
+    if (taskIndex <= countAllTask()) {
       List<String> saveDataTaskStatusList = _myStorage.getListTaskStatus();
       saveDataTaskStatusList[taskIndex] = '1';
       String saveDataTaskStatusString =
@@ -136,7 +136,7 @@ class TaskListVM {
 
   void deleteTask(int rawIndex) {
     int taskIndex = rawIndex + 1;
-    if (taskIndex < countAllTask()) {
+    if (taskIndex <= countAllTask()) {
       List<String> saveDataTaskTitleList = _myStorage.getListTaskTitle();
       List<String> saveDataTaskDescriptionList =
           _myStorage.getListTaskDescription();
